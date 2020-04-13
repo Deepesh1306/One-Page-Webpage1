@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+    background-color: green;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5em;
+    color: black;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #00ff6c;
+}
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("Home.jpg") center/cover no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+.fix {
+  position: fixed;
+  text-shadow: 0px 10px 5px rgba(150, 150, 150, 1);
+  width: 100%;
+}
+.main a {
+  float: left;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+  padding: 15px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #c7e5ea;
+  display: inline;
+  text-decoration: none;
+  width: 25%;
+  transition: 0.5s;
+}
+a:hover {
+  background-color: green;
+  color: #c7e5ea;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.5rem;
+}
+
+.banner-subtitle {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #c7e5ea;
+  animation-name: lefts;
+  animation-duration: 3s;
+  animation-timing-function: 1;
+}
+@keyframes lefts {
+  0% {
+    transform: translateX(400px);
+  }
+  50% {
+    transform: translateX(-400px);
+  }
+  75% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.banner-title {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  color: white;
+  margin-top: 2.5rem;
+  line-height: 1.3;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+@keyframes move {
+  0% {
+    transform: translateX(-400px);
+  }
+  50% {
+    transform: translateX(400px);
+  }
+  75% {
+    transform: translateX(-250px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.main-btn,
+.banner-btn {
+  display: inline-block;
+  background: green;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  color: darkgray;
+  font-weight: bold;
+  outline: 0.2rem solid green;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: 0.3s;
+}
+.main-btn:hover,
+.banner-btn:hover {
+  color: white;
+  opacity: 0.7;
+}
+.banner-btn {
+  padding: 1.2rem 1.5rem;
+  animation-name: moving;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+@keyframes moving {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.content-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    #7e70a0,
+    #ae8bbc,
+    #54428e,
+    #8f91a2,
+    #51344d
+  );
+}
+.skill {
+  background: darkgray;
+  display: inline-flex;
+  width: 1520px;
+  height: 225px;
+}
+.skills {
+  background: darkgray;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+.products-inventory img {
+  width: 270px;
+  height: 90px;
+  padding-left: 20px;
+}
+.skill1 {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: 0.5s;
+  animation-name: skilla;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  width: 10%;
+  height: 10%;
+}
+@keyframes skilla {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.skill2 {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: 0.5s;
+  animation-name: skillb;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  width: 10%;
+  height: 10%;
+}
+@keyframes skillb {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.skill-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  margin-bottom: 1.5rem;
+  color: green;
+  transition: 0.5s;
+  text-shadow: 0px 10px 3px rgba(150, 150, 150, 1);
+}
+
+.skill-text {
+  max-width: 13rem;
+  margin: 0 auto;
+  text-shadow: 10px;
+  font-size: 15px;
+}
+
+.skill1:hover {
+  background: rgba(10, 78, 10, 0.808);
+  opacity: 1.2;
+
+  font-size: 18px;
+}
+.skill2:hover {
+  background: rgba(10, 78, 10, 0.808);
+  opacity: 1.2;
+
+  font-size: 18px;
+}
+
+.skill1:hover .skill-title {
+  color: white;
+
+  font-size: 15px;
+}
+.skill2:hover .skill-title {
+  color: white;
+
+  font-size: 15px;
+}
+
+.skill1:hover .skill-text {
+  color: white;
+
+  font-size: 15px;
+}
+.skill2:hover .skill-text {
+  color: white;
+
+  font-size: 15px;
+}
+
+.fa-mug-hot {
+  font-size: 25px;
+  margin: 10px;
+}
+.fa-compass {
+  font-size: 25px;
+  margin: 10px;
+}
+.fa-product-hunt {
+  font-size: 25px;
+  margin: 10px;
+}
+.fa-elementor {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.about-img,
+.about-info {
+  padding: 1rem;
+}
+.about-picture-container {
+  background: rgb(58, 53, 53);
+  border: 0.5rem solid green;
+  border-radius: 1rem;
+}
+.about-picture {
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+}
+.about-text {
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+.about-img,
+.about-info {
+  float: left;
+  width: 50%;
+  padding: 2rem;
+}
+.about-info {
+  animation-name: anim;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  transition: 1s;
+}
+@keyframes anim {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.products {
+  background-color: rgb(54, 54, 54);
+}
+
+.products-info,
+.products-inventory {
+  padding: 2rem 0;
+}
+.product-text {
+  color: #fff;
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+.product {
+  padding: 2rem 0;
+}
+.product-img {
+  width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+}
+.product-title {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5;
+  margin-bottom: 1rem;
+  padding: 2rem 0;
+}
+.section-sub {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.product-price {
+  color: green;
+  letter-spacing: 0.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.product:hover {
+  overflow: hidden;
+}
+.product-img:hover,
+.product-img:focus {
+  width: 105%;
+  height: auto;
+  transition: 0.4s;
+}
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding: 2rem 1rem;
+  }
+  .products-info {
+    padding: 2rem 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product {
+    width: 33.3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-info {
+    float: left;
+    width: 30%;
+  }
+
+  .products-inventory {
+    float: left;
+    width: 70%;
+  }
+  .product {
+    padding: 1.5rem 1rem 0 1rem;
+  }
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  background-color: #ccc5b9;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc5b9;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="email"] {
+  width: 100%;
+  background-color: #ccc5b9;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc5b9;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: #464f51;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: green;
+}
+
+.new-division {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 100%;
+}
